@@ -64,4 +64,12 @@
   .hover-scale {
     @apply transition-transform duration-200 hover:scale-105;
   }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent;
+  }
+
+  .phone-highlight {
+    @apply text-3xl font-bold text-black hover:text-white transition-all duration-300 cursor-pointer;
+  }
 }

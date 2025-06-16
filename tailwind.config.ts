@@ -62,6 +62,8 @@ export default {
           "linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%)",
         "gradient-purple-blue":
           "linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%)",
+        "gradient-radial": "radial-gradient(circle, #3B82F6 0%, #8B5CF6 100%)",
+        "gradient-dark": "linear-gradient(135deg, #000000 0%, #1a1a1a 100%)",
       },
       borderRadius: {
         lg: "var(--radius)",

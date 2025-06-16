@@ -4,48 +4,49 @@ const Features = () => {
   const features = [
     {
       icon: "Target",
-      title: "Практический подход",
+      title: "Практика с первого дня",
       description:
-        "Реальные кейсы и проекты, которые вы сможете добавить в портфолио",
+        "Работаете с реальными проектами и кейсами ведущих брендов России",
     },
     {
       icon: "Users",
-      title: "Менторская поддержка",
-      description: "Персональный ментор на протяжении всего обучения",
+      title: "Персональный ментор",
+      description: "Опытный наставник ведёт вас от начала до трудоустройства",
     },
     {
       icon: "Trophy",
-      title: "Гарантия результата",
+      title: "Гарантия трудоустройства",
       description:
-        "Возврат средств, если не найдете работу в течение 6 месяцев",
+        "Возвращаем 100% стоимости, если не найдёте работу за 4 месяца",
     },
     {
-      icon: "Clock",
-      title: "Гибкий график",
-      description: "Обучайтесь в удобное время, доступ к материалам 24/7",
+      icon: "Zap",
+      title: "Актуальные знания",
+      description: "Обновляем программы каждые 3 месяца под требования рынка",
     },
     {
       icon: "Award",
-      title: "Сертификат",
-      description: "Официальный сертификат о прохождении курса",
+      title: "Сертификат гос. образца",
+      description: "Официальный документ о повышении квалификации",
     },
     {
       icon: "Briefcase",
-      title: "Помощь в трудоустройстве",
-      description: "Помогаем составить резюме и подготовиться к собеседованиям",
+      title: "Помощь HR-отдела",
+      description:
+        "Составляем резюме, готовим к собеседованиям, находим вакансии",
     },
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-black">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-black mb-6">
-            Почему выбирают нас?
+          <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-white mb-6">
+            Почему <span className="gradient-text">MarketingPro</span>?
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Мы создали уникальную систему обучения, которая гарантирует
-            результат
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            Единственная школа в России с гарантией трудоустройства и возвратом
+            денег
           </p>
         </div>
 
@@ -53,19 +54,19 @@ const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8 hover:shadow-xl transition-all duration-300 hover-scale"
+              className="group bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-xl p-8 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 hover-scale"
             >
-              <div className="bg-gradient-blue-purple rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <div className="bg-gradient-blue-purple rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
                 <Icon
                   name={feature.icon as any}
                   size={32}
                   className="text-white"
                 />
               </div>
-              <h3 className="text-xl font-montserrat font-bold text-black mb-4">
+              <h3 className="text-xl font-montserrat font-bold text-white mb-4">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 {feature.description}
               </p>
             </div>
